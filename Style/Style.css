@@ -1,3 +1,12 @@
+/* PENDINGS 
+revisar footer links
+link github y logo
+LIMPIAR
+*/
+
+
+
+
 * *,
 *::after,
 *::before {
@@ -9,7 +18,7 @@
 
 
   .headinghome{
-    font-size: 180px;
+    font-size: 130px;
     color: green;
   }
 
@@ -37,6 +46,9 @@ body {
  .item-home:nth-child(3){
 align-self: center;}
 
+
+
+
 /* HEADER */
 
 header {
@@ -62,9 +74,11 @@ display: flex;
        gap: 5px;
        flex-direction: row;
        align-content: center;
-       justify-content: space-evenly;
+       justify-content: center;
        text-decoration: none;
        display: flex;
+       flex-wrap: wrap;
+ 
 
 
    }
@@ -92,6 +106,16 @@ display: flex;
 .logo:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+}
+
+.github:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+.github {
+    text-decoration: none;
 }
 
 @keyframes shake {
@@ -147,7 +171,16 @@ display: flex;
 
      .logo{width: 150px; place-self: center;}
      
+ .itemheader {
+     font-size: 16px;
+     gap: 5px;
+     flex-direction: row;
+     align-content: center;
+     justify-content:baseline;
+     text-decoration: none;
+     display: flex;
 
+ }
 
 }
 
@@ -157,9 +190,10 @@ display: flex;
 /* SECTION */
 
 .sectionflex {
-
+display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: baseline;
 
 }
 
@@ -183,14 +217,16 @@ article {
 footer {
     background-color: rgb(136, 200, 136);
     font-family: Arial;
-    justify-content: center;
+  
+
 }
 .item-footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 5px;
     align-items: center;
+   
+   
     
   
 }
@@ -200,8 +236,10 @@ footer {
     list-style: none;
     font-size: 22px;
     margin: 0%;
-    justify-content: center;
- 
+    flex-wrap: wrap;
+    
+
+
 
 }
 
@@ -219,20 +257,22 @@ footer {
     align-items: baseline;
     justify-content: center;
     gap: 20px;
-    margin: 0%;
+
     flex-wrap: wrap;
     
 }
 
 
+
  
 .item-home-global-list{
     display: flex;
-justify-content: baseline;
+justify-content: flex-start;
     flex-direction: column;
     gap: 8px;
     font-family: Arial;
     align-items: center;
+    
 
 } 
 
@@ -244,6 +284,8 @@ justify-content: baseline;
     margin-right: 50%;
     
 } */
+
+
 
 h2{
     font-size: 20px;
@@ -259,8 +301,13 @@ p{
 
 
 .divp2{
-    font-size: 14px;
+    font-size: 14px;   
+    display: flex;
+    justify-content: start;
+
 }
+
+
 
 
 .logoregister{
@@ -271,6 +318,7 @@ p{
     
 
 }
+
 
 .logoregister:hover {
     animation: shake 0.5s;
@@ -304,6 +352,10 @@ p{
 
 /* ABOUT US */
 
+.headingabout {
+    font-size: 130px;
+    color: green;
+}
 
 .containerabout{
     display: flex;
@@ -395,16 +447,45 @@ HTML CSSResult Skip Results Iframe EDIT ON .container-name {
        font-size: 18px;
    }
 
+         .headingabout {
+             font-size: 80px;
+             color: green;
+             align-self: center;
+
+         }
+
 .item-list-about {
     align-content: flex-start;
     justify-content:flex-start;
 }
+
+.item-footer-list:nth-child(3){padding-left: 30px;}
+
+
+
 .item-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 30px;
+    gap: 15px;
+    align-self: center;
+  
+    
+
+
+
 }
+.item-footer-list{
+    font-size: 13px;
+    align-self: baseline;
+    justify-content: flex-start;
+ 
+
+
+
+
+}
+
+
 
 .logoregister{width: 250px;
 align-content: center; margin: 0%;}
@@ -415,7 +496,7 @@ align-content: center; margin: 0%;}
 /* CONTENT */
 
 .heading {
-    font-size: 180px;
+    font-size: 130px;
     color: green;
 }
 
@@ -429,15 +510,17 @@ table {
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    display: flex;
     margin: 0%;
     margin-left: 15%;
     margin-right: 15%;
-    padding: 0;
+
     
     
 }
 
+tr:hover {
+    background-color: darkgreen; 
+}
 th :nth-child(1){text-transform: uppercase;}
 
 td,
@@ -451,6 +534,7 @@ th {
 
 tr:nth-child(even) {
     background-color:rgb(136, 200, 136);
+    
     
 }
 
@@ -519,7 +603,7 @@ td:nth-child(4){
 
 .h1registration {
     padding-top: 10px;
-    font-size: 90px;
+    font-size: 120px;
     color: green;
     margin: 0%;
     grid-area: title;
@@ -527,6 +611,10 @@ td:nth-child(4){
    
 
 }
+
+
+
+
 /* @media only screen and (max-width: 600px) {
 .grid {
         display: grid;
@@ -558,12 +646,15 @@ td:nth-child(4){
     "terms terms"
     "agree agree"
     "submit submit";
-    gap: 40px;
+
     font-size: 32px;
     align-items: center;
-    justify-items: center;
-
+    justify-content: center;
+    column-gap: .1px;
+    row-gap: 20px;
 }
+
+
 
 
 .agree{
@@ -604,6 +695,7 @@ grid-area: agree;
 .terms {
     grid-area: terms;
     width: 90%;
+    list-style-type: square
     
     
 }
@@ -655,8 +747,14 @@ font-size: 24px;
         height: 200px
     }
 
+.item-home {
+    display: flex;
+   
+}
+
 
     .item-home-global-list {
+        display: flex;
         flex-direction: row;
       align-items: center;
         gap: 10px;
@@ -669,16 +767,47 @@ font-size: 24px;
     .headinghome {
         font-size: 80px;
         color: green;
+        align-self: center;
+        margin: auto;
+        margin-right: 50%;
+        margin-left: 50%;
+        
 
     }
 
         .centerp {
             font-size: 20px;
             justify-content: center;
+            flex-wrap: wrap;
+            width: 70%;
           
         }
 
-        table{font-size: 12px;}
+                table {
+                    border-collapse: collapse;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 8px;
+                    margin: 0%;
+                    margin-left: 01%;
+                    margin-right: 01%;
+
+                }
+
+                                td:nth-child(4) {
+                                    color: green;
+                                    font-size: 10px;
+                
+                                }
+                
+.grid-community {
+    display: grid;
+    grid-template-areas: "changeclubs"
+    "quantumleap";
+    align-items: baseline;
+    gap: 20px;
+}
+
+
 
 .grid {
     display: grid;
@@ -696,22 +825,30 @@ font-size: 24px;
         "submit submit";
     justify-content: flex-end;
     gap: 10px;
+    font-size: 11px;
 
 
 }
 
+
 .h1registration{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .divp2 {
     font-size: 15px;
-    justify-content: center;
+    justify-content: start;
 }
 
+.divp2:nth-child(1){display: block;}
+
  .heading {
-     font-size: 30px;
-     color: green;
+    font-size: 35px;
+        color: green;
+        align-self: center;
+        margin: auto;
+        margin-right: 20%;
+        margin-left: 20%;
 
  }
 
