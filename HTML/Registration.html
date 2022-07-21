@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="itemheader">
+            <a href="/Index.html">
+                <img src="../Img/CGlogo.jpg" alt="logo" width="100" class=" logo shake">
+
+            </a>
+
+        </div>
+        <div class="itemheader">
+            <a href="../Index.html" style="text-decoration: none;" class="ulheader"><span
+                    class="material-symbols-outlined">
+                    public
+                </span>Home</a>
+
+            <a href="/HTML/About.html" style="text-decoration: none;" class="ulheader"><span
+                    class="material-symbols-outlined">
+                    public
+                </span>About us</a>
+        </div>
+    </header>
+    <!-- SECTION -->
+    <section>
+        <div class="grid">
+            <h1 class="h1registration rakkas">Registration Form</h1>
+            <div class="name">
+                <!-- NAME -->
+                <label for="fname"> <b>Name:
+                    </b> <br></label>
+                <input type="text" id="fname" name="fname" style="background-color: rgb(136, 200, 136);"><br>
+            </div>
+            <div class="surname">
+                <br>
+                <label for="lname"> <b>Surname:</b></label><br>
+                <input type="text" id="lname" name="lname" style="background-color: rgb(136, 200, 136);">
+            </div>
+            <div class="email">
+                <!-- EMAIL: --> <br>
+                <label for="fmail"><b>Email Address:</b></label> <br>
+                <input type="text" id="fmail" name="fmail" style="background-color: rgb(136, 200, 136);"><br>
+            </div>
+            <div class="birth">
+                <!-- BIRTH DATE -->
+                <br>
+                <label><b>Birth Date:</b></label>
+                <input type="date" id="date" name="birthdate" value="2022-07-18" min="1960-01-01" max="2022-08-31"
+                    style="background-color: rgb(136, 200, 136);">
+            </div>
+            <div class="location">
+                <!-- LOCATION -->
+                <br>
+                <label for="borough">Choose a borough:</label>
+                <select id="city" name="city" style="background-color: rgb(136, 200, 136);">
+                    <option value="Charlottenburg-Wilmersdorf">Charlottenburg-Wilmersdorf</option>
+                    <option value="Friedrichshain-Kreuzberg">Friedrichshain-Kreuzberg</option>
+                    <option value="Lichtenberg">Lichtenberg</option>
+                    <option value="Marzahn-Hellersdorf">Marzahn-Hellersdorf</option>
+                    <option value="Neukölln">Neukölln</option>
+                    <option value="Pankow">Pankow</option>
+                    <option value="Reinickendorf">Reinickendorf</option>
+                    <option value="Spandau">Spandau</option>
+                    <option value="Steglitz-Zehlendorf">Steglitz-Zehlendorf</option>
+                    <option value="Tempelhof-Schöneberg">Tempelhof-Schöneberg</option>
+                    <option value="Treptow-Köpenick">Treptow-Köpenick</option>
+                </select>
+            </div>
+            <div class="area">
+                <br>
+                <!-- AREA OF INTEREST -->
+                <label><b>Select Areas of Interest:</b></label><br><br>
+                <input type="checkbox" id="area1" name="area" value="Energy">
+                <label> Energy</label><br> <br>
+                <input type="checkbox" id="area2" name="area" value="transport">
+                <label> Transport </label><br><br>
+                <input type="checkbox" id="area3" name="area" value="Food">
+                <label for="area3"> Food</label> <br> <br>
+                <input type="checkbox" id="area4" name="area" value="Consumption">
+                <label> Consumption</label><br> <br>
+            </div>
+            <div class="notification">
+                <!-- NOTIFICATIONS -->
+                <label> <b>Would you like to receive other communications from Green
+                        Codes?</b></label><br> <br>
+                <input type="radio" id="Ynotifications" name="notifications" value="notifications">
+                <label>Yes</label> &nbsp; &nbsp;
+                <input type="radio" id="Berlin" name="notifications" value="notifications">
+                <label>No</label><br> <br>
+            </div>
+            <div class="terms">
+                <!-- TERMS AND CONDITIONS -->
+                <b>Terms and Conditions</b>
+                <ol>
+                    <li>Terms
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, inventore?</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, at.</li>
+                        </ul>
+                    </li>
+                    <li>Conditions
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="agree">
+                <input type="checkbox" id="termsconditions" name="termsconditions" value="termsconditions">
+                <label for="termsconditions"> I agree with the terms and conditions</label><br> <br><br> <br>
+            </div>
+            <!-- SUBMIT -->
+            <!-- <div class="submit">
+                    <input type="submit" value="Get Codes Now!">
+                </div> -->
+
+            <button class="submit" onclick="myFunction()">Get Codes Now!</button>
+
+            <script>
+                function myFunction() {
+                    confirm("Please complete the form to enjoy the codes!");
+                }
+            </script>
+        </div>
+        </form>
+
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <br>
+        <div class="item-footer">
+            <div class="item-footer-list">
+                <a href="./About.html">About us</a>
+            </div>
+            <div class="item-footer-list">
+                © Code Academy <br> Berlin 2022
+            </div>
+            <div class="item-footer-list">
+                by Alberto Carrillo
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
