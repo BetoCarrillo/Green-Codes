@@ -493,6 +493,11 @@ align-content: center; margin: 0%;}
         
 }
 
+.logoregister:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 2;
+}
+
 
 /* CONTENT */
 
@@ -507,6 +512,62 @@ flex-direction: column;
   
 }
 
+
+
+/* table {
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+
+
+}
+
+tr:hover {
+    background-color: rgb(136, 200, 136);
+}
+
+th :nth-child(1) {
+    text-transform: uppercase;
+}
+
+td,
+th {
+    border: 1px solid rgb(57, 123, 57);
+    text-align: left;
+    padding: 8px;
+
+
+}
+
+td:nth-child(4) {
+    color: green;
+    font-size: 28px;
+    font-weight: bolder;
+
+}
+
+
+tr:nth-child(2) td:nth-child(4) {
+    color: white;
+
+}
+
+
+tr:nth-child(4) td:nth-child(4) {
+    color: white;
+
+}
+
+tr:nth-child(6) td:nth-child(4) {
+    color: white;
+
+} */
+
+
 table {
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
@@ -515,13 +576,14 @@ table {
     margin-left: 15%;
     margin-right: 15%;
 
-    
-    
+ 
 }
 
 tr:hover {
-    background-color: darkgreen; 
+    background-color: rgb(136, 200, 136);
+    color: white;
 }
+
 th :nth-child(1){text-transform: uppercase;}
 
 td,
@@ -533,11 +595,6 @@ th {
     
 }
 
-tr:nth-child(even) {
-    background-color:rgb(136, 200, 136);
-    
-    
-}
 
 td:nth-child(4){
     color: green;
@@ -547,19 +604,9 @@ td:nth-child(4){
 }
 
 
- tr:nth-child(2)
- td:nth-child(4) {color: white;
 
-}
- tr:nth-child(4) td:nth-child(4) {
-     color: white;
 
- }
 
-  tr:nth-child(6) td:nth-child(4) {
-      color: white;
-
-  }
 
 .grid-community{
     display: grid;
@@ -581,26 +628,8 @@ td:nth-child(4){
     
 }
 
-/* .item-community{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-} */
-
 /* REGISTRATION */
 
-/* .body-registration{
-    display: grid;
-    grid-template-areas: "hregistration" "sregistration" "fregistration";
-} */
-
-
-
-
-/* .fregistration{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-} */
 
 .h1registration {
     padding-top: 10px;
@@ -612,28 +641,6 @@ td:nth-child(4){
    
 
 }
-
-
-
-
-/* @media only screen and (max-width: 600px) {
-.grid {
-        display: grid;
-        grid-template-areas:
-            "title title"
-            "name surname"
-            "email birth"
-            "location location"
-            "area area"
-            "notifications notifications"
-            "terms terms"
-            "agree agree"
-            "submit submit";
-
-        gap: 40px;
-
-    }
-} */
 
 
 .grid {
@@ -654,8 +661,6 @@ td:nth-child(4){
     column-gap: .1px;
     row-gap: 20px;
 }
-
-
 
 
 .agree{
@@ -707,20 +712,6 @@ color: green;
 font-size: 24px;
 
 }
-
-
-
-/* { */
-    /* display: grid;
-    grid-template-areas:
-    "header header" 
-    "name surname" 
-    "email birth"
-    "location area"
-    "notifications notifications"
-    "terms terms"
-    "terms terms";
-} */
 
 
 /* MEDIA QUERY */
